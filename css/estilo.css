@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+
+
+body {
+    background-color:#8B008B;
+   background-size: auto 100vh;
+   font-family: Arial;
+   color: whitesmoke;
+    height: 100vh;
+   
+   
+  }
+
+  /* se a tela tiver pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  /* breakpoint */
+  @media (min-width: 600px) {
+    body {
+      font-size: 18px;
+    }
+  }
+  
+  /* breakpoint */
+  @media (min-width: 1200px) {
+    body {
+      font-size: 20px;
+     
+     
+    }
+  }
+
+  header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu {
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li {
+   list-style: none; 
+  }
+  
+  .menu a {
+    
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 1s, color 1s;
+  }
+
+  .menu a:active,
+  .menu a:hover {
+  background-color:#8B008B;
+  color: white;
+}
+  
+  a {
+    color: teal;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  
+  
+  
+  .site-subtitle, 
+  .site-title {
+    color: whitesmoke;
+    text-align: center;
+    letter-spacing: 5px;
+    
+  }
+  
+  .site-title {
+    font-size: 4em;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .site-subtitle {
+   font-style: italic;
+   font-family: 'Montserrat', sans-serif;
+   line-height: 1.8em;
+  }
+  
+  .contato,
+  .portfolio {
+
+    padding: 2em;
+    height: 100vh;
+  }
+  
+  .contato h2,
+  .portifolio h2{
+    font-family: 'Pacifico', cursive;
+    color: whitesmoke;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+  }
+  
+  .portifolio .grid {
+    display: grid;
+    gap: 2em;
+  }
+
+  @media (min-width: 560px) {
+    .portifolio .grid {
+      grid-template-columns: 240px 240px;
+    }
+  }
+  
+  @media (min-width: 880px) {
+    .portifolio .grid {
+      grid-template-columns: repeat(3, 260px);
+      align-content: center;
+      justify-content: center;
+      height: calc(100vh - 8em - 48px);
+    }
+  }
+  
+  .portifolio figure {
+    text-align: center;
+  }
+  
+  
+  #contato,
+  .icons{
+    text-align: center;
+   
+    
+  }
+  
+  .contato a {
+    color: whitesmoke;
+    font-size: 4em;
+    transition: text-shadow 1s;
+  }
+  
+  .contato a:active,
+  .contato a:hover  {
+    text-decoration: none;
+    text-shadow: 0px 0px 10px rgba(255,255,255,.5);
+  }
+
+
+
+
+
+  .linguagem{
+    letter-spacing: 8px
+}
+section.conhecimento li.r1{
+   
+   border-color: #fff;
+   color: #fff;
+   background-color: rgba(255, 255, 255, 0.2);
+}
+
+section.conhecimento li.r2{
+   border-color: rgba(255,255, 255, 0.5);
+   color: rgba(255, 255, 255, 0.5);
+   border-width: 1px;
+   padding: 6px 16px;
+   
+}
+section.conhecimento li{
+   float: left;
+   display: block;
+   list-style: none;
+   font-weight: 400;
+   padding: 5px  15px;
+   margin: 0 15px 15px 0;
+   border-width: 2px ;
+   border-style: solid;
+    font-size: 1.6em;
+  
+}
+
+.imagem-portifolio {
+   height: 80px;
+   width: 180px;
+   object-fit: cover;
+   object-position: left bottom;
+   transition: transform 500ms;
+ 
+ }
+ .imagem-portifolio:hover {
+   transform: scale(1.2) rotate(-2deg);
+  
+ }
+
